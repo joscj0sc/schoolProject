@@ -1,0 +1,32 @@
+canvas {
+    border: 2px solid black;
+    background-color: #f0f0f0;
+    display: block;
+    margin: 20px auto;
+  }
+ body{
+  background-color: #495CB9;
+     }
+
+.overlay-button {
+  display: none;                /* hidden by default */
+  position: absolute;
+  top: 60%; left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  font-size: 18px;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #67D3B9, #40916C);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform .1s ease;
+}
+.overlay-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+.overlay-button:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
