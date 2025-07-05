@@ -426,7 +426,9 @@ function gameLoop() {
   updatePosition();
   moveAddGate();
   draw();
-  gateHitPlayer();
+  if(players.length <2000){
+    gateHitPlayer();
+  }
   spawnGatesCountdown();
   requestAnimationFrame(gameLoop);
 }
