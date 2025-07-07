@@ -277,7 +277,7 @@ function addValueGate(op, am) {
     amount: am,
     leftOrRight: Math.random() < 0.5 ? -1 : 1,
     functionOfGate() {
-      if (this.operation === "*") {
+      if (this.operation === "x") {
         const initialCount = players.length;
         const toAdd = initialCount * (this.amount - 1);
         for (let j = 0; j < toAdd; j++) {
@@ -390,7 +390,7 @@ function spawnGates() {
     if (randOp < thresholdForRandOp) {
       addValueGate("/", Math.ceil(Math.random() * 4) + 1);
     } else if (randOp > thresholdForRandOp) {
-      addValueGate("*", Math.ceil(Math.random() * 3) + 1);
+      addValueGate("x", Math.ceil(Math.random() * 3) + 1);
     }
   } else {
     if (randOp < 0.7) {
